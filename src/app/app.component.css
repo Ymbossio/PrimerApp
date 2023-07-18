@@ -1,0 +1,66 @@
+p{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* GUIA DE INICIALIZACIÒN */
+/* 
+
+<span>Primer Componente  <br>
+  <!-- Property binding se le asigna el el valor que contiene una propiedad a una función html 
+<button class="btn btn-success" [disabled]="deshabilitar">Agregar persona</button>  -->
+
+
+<!-- Event binding se le asigna el el valor que contiene una propiedad a una función html -->
+
+<button class="btn btn-success" [disabled]="deshabilitar"
+(click)='PesonaAgregada()'>Agregar persona</button>
+{{Mensaje}}
+</span>
+
+<br>
+
+<!-- two way biding asociamos una propiedad con un evento -->
+<label>Especialidad:</label>
+<input type="text" [(ngModel)]="especialidad">
+{{especialidad}}
+
+
+<!-- utilizamos el evento y vamos mostrando lo que el usuario va escribiendo en el input INTERPOLACIÓN
+<div (keyup)='0'>
+    <input #entrada/>
+    {{entrada.value }}
+
+  </div>
+ -->
+ <br>
+
+ <label>-----------------------------------------------------------------------------------------------------</label>
+ <!-- Ejercicios  Property Binding-->
+ <!-- a. Crea un componente que tenga una variable "nombre" con un valor inicial. 
+          Utiliza property binding para mostrar ese valor en una etiqueta <p> en el template del componente.
+ -->
+<br><br><br>
+ <label>Nombre</label>
+ <input type="text" [(ngModel)]='nombre'>
+ <p>{{nombre}}</p>
+
+ <!-- b. Agrega un botón al componente y utiliza property binding para deshabilitarlo cuando la variable "nombre" esté vacía. -->
+ <br><br><br>
+ <label>Nombre</label>
+ <input type="text" [(ngModel)]='nombre'> <button [disabled]='deshabilitar' (click)='activa()'>inhabilitar</button>
+ <p>{{nombre}}</p>
+
+ <!-- Ejercicios  Event Binding-->
+ <!-- . Crea un componente que tenga un botón. Utiliza event binding para escuchar el evento de clic del botón y 
+  mostrar un mensaje en la consola cuando se haga clic en él. -->
+
+  <button (click)='mensaje()'>mostrar</button>
+
+
+
+*/
